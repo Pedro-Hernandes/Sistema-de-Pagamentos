@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicPay Simplificado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>PicPay Simplificado</h1>
+
+    <button onclick="window.location.href='cadastro.html'">Cadastrar Usuário</button>
+
+    <form id="transfer-form">
+        <label for="payer">Payer ID:</label>
+        <input type="number" id="payer" name="payer" required>
+
+        <label for="payee">Payee ID:</label>
+        <input type="number" id="payee" name="payee" required>
+
+        <label for="value">Amount:</label>
+        <input type="number" id="value" name="value" step="0.01" required>
+
+        <button type="submit">Transfer</button>
+    </form>
+
+    <div class="notification" id="notification"></div>
+</div>
+
+<script src="script.js"></script>
+<script src="list_users.js"></script>
+</body>
+</html>
