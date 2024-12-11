@@ -1,61 +1,102 @@
+/* Estilos principais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f9;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
-    background-color: #0077cc;
+    background-color:white;
     color: white;
-    text-align: center;
-    padding: 1rem;
+    text-align: left;
+    padding: 24px;
+    padding-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Conteúdo principal */
 main {
     padding: 2rem;
+    max-width: 800px;
+    margin: auto;
 }
 
 section {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
     margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #21C25E;
+}
+
+/* Formulários */
 form {
     display: flex;
     flex-direction: column;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input, select, button {
     margin: 0.5rem 0;
-    padding: 0.5rem;
+    padding: 0.75rem;
     font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #21C25E;
+    box-shadow: 0 0 4px rgba(0, 233, 51, 0.5);
 }
 
 button {
-    background-color: #0077cc;
+    background-color: #21C25E;
     color: white;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #005fa3;
+    background-color: #21C25E;
 }
 
+/* Lista de usuários */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
 li {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    background-color: #eaeaea;
-    border: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 li .delete-btn {
@@ -63,12 +104,14 @@ li .delete-btn {
     color: white;
     border: none;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
 }
 
 li .delete-btn:hover {
