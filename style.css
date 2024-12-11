@@ -1,0 +1,151 @@
+/* Estilos gerais para o body e containers */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav a {
+    color: #f0f0f0;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Tabela de usuários */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3a3a3a;
+    color: white;
+    font-size: 1.1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    padding: 6px 12px;
+    margin: 5px;
+    font-size: 0.9rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Formulário de Cadastro e Edição */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #28a745;
+    font-size: 1rem;
+}
+
+form button[type="button"] {
+    background-color: #dc3545;
+}
+
+form button[type="button"]:hover {
+    background-color: #c82333;
+}
+ 
+/* Estilos de responsividade */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    table, form {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
